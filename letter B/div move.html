@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh; /* Set height to demonstrate scrolling */
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative; /* Make this the reference for absolute positioning */
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .top-box {
+            position: absolute; /* Positioned relative to the container */
+            top: 0; /* Move to the top */
+            left: 0; /* Align to the left */
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .bottom-box {
+            position: absolute; /* Positioned relative to the container */
+            bottom: 0; /* Move to the bottom */
+            left: 0; /* Align to the left */
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-box">I am at the Top!</div>
+        <div class="bottom-box">I am at the Bottom!</div>
+    </div>
+</body>
+</html>

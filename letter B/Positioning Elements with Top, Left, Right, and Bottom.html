@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative; /* This will be the reference for absolute positioning */
+            width: 400px;
+            height: 400px;
+            background-color: white; /* White background for the container */
+            border: 2px solid #ccc; /* Border around the container */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .box {
+            position: absolute; /* Positioned relative to the container */
+            padding: 10px;
+            color: white; /* White text color */
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: #007bff; /* Blue background */
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: #28a745; /* Green background */
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: #dc3545; /* Red background */
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: #ffc107; /* Yellow background */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box top-left">Top Left</div>
+        <div class="box top-right">Top Right</div>
+        <div class="box bottom-left">Bottom Left</div>
+        <div class="box bottom-right">Bottom Right</div>
+    </div>
+</body>
+</html>

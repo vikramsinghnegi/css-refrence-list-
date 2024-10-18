@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Div with 100vh</title>
+    <style>
+        /* Make the body take 100% of the viewport height */
+        body {
+            margin: 0;
+            height: 100vh; /* 100% of the viewport height */
+            display: flex;
+            justify-content: center; /* Horizontally center the div */
+            align-items: center; /* Vertically center the div */
+        }
+
+        /* Styling for the centered div */
+        .centered-div {
+            background-color: lightcoral;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-div">
+        <h2>Centered Div</h2>
+        <p>This div is centered both horizontally and vertically using 100vh!</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+Explanation:
+100vh:
+height: 100vh; is used to make the body element take up the full height of the viewport (100% of the visible screen).
+Flexbox:
+display: flex; makes the body a flex container.
+justify-content: center; horizontally centers the child element (the div).
+align-items: center; vertically centers the child element.
+This approach ensures that the div remains centered regardless of viewport size, using 100vh to adapt to the height of the user's screen.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .text-example {
+            margin: 20px 0;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #28a745;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Text Alignment</h2>
+    <div class="text-example text-left">Left Aligned Text</div>
+    <div class="text-example text-center">Center Aligned Text</div>
+    <div class="text-example text-right">Right Aligned Text</div>
+    <div class="text-example text-justify">This text is justified. It aligns the text to both the left and right edges of the container, creating a clean look.</div>
+
+    <h2>Flexbox Alignment</h2>
+    <div class="flex-container">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h2>Grid Alignment</h2>
+    <div class="grid-container">
+        <div class="grid-item align-self-start">Grid Item 1</div>
+        <div class="grid-item align-self-center">Grid Item 2</div>
+        <div class="grid-item align-self-end">Grid Item 3</div>
+    </div>
+
+    <h2>Block Alignment with Margin Auto</h2>
+    <div style="margin: auto; width: 50%; background: #007bff; color: white; text-align: center; padding: 10px;">
+        Centered Block with Margin Auto
+    </div>
+</body>
+</html>

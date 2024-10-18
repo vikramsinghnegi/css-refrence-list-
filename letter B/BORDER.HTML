@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .section {
+            position: relative;
+            height: 200px;
+            margin: 10px 0;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+
+        /* Example 1: Background Image with Blend Mode */
+        .blend-mode {
+            background-image: url('https://source.unsplash.com/random/800x600');
+            background-color: rgba(255, 0, 0, 0.5); /* Red overlay */
+            background-blend-mode: multiply; /* Blend the image with color */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Example 2: Background Clip with Color */
+        .background-clip {
+            background-image: url('https://source.unsplash.com/random/800x601');
+            background-color: rgba(0, 0, 255, 0.5); /* Blue overlay */
+            background-clip: text; /* Clips background to the text */
+            -webkit-background-clip: text; /* For Safari compatibility */
+            color: transparent; /* Make text transparent to show the background */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Example 3: Background Position and Origin */
+        .background-origin {
+            background-image: url('https://source.unsplash.com/random/800x602');
+            background-color: #ff7f50; /* Coral background */
+            background-position: right top; /* Position background at the top right */
+            background-origin: padding-box; /* Start background from padding area */
+            background-size: cover;
+        }
+
+        /* Example 4: Background Position X and Y */
+        .background-position {
+            background-image: url('https://source.unsplash.com/random/800x603');
+            background-color: #4682b4; /* Steel blue background */
+            background-position-x: 50%; /* Center horizontally */
+            background-position-y: 30%; /* Offset from top */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section blend-mode">
+            Background Blend Mode
+        </div>
+        <div class="section background-clip">
+            Background Clip
+        </div>
+        <div class="section background-origin">
+            Background Origin
+        </div>
+        <div class="section background-position"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Size and Border Properties Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc; /* Outer border */
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white; /* White background for the container */
+        }
+
+        .box {
+            block-size: 150px; /* Set the height (block size) */
+            inline-size: 100%; /* Set the width (inline size) */
+            margin: 10px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            border: 2px solid transparent; /* Base border to show border colors */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Example 1: Border Block */
+        .border-block {
+            border-block: 3px solid #007bff; /* Blue border for block (top and bottom) */
+            background-color: #007bff; /* Blue background */
+        }
+
+        /* Example 2: Border Block End */
+        .border-block-end {
+            border-block-end: 5px solid #dc3545; /* Red border for bottom */
+            background-color: #dc3545; /* Red background */
+            border-block-start: 3px solid transparent; /* Transparent top border */
+        }
+
+        /* Example 3: Border Block Start */
+        .border-block-start {
+            border-block-start: 4px dashed #28a745; /* Green dashed border for top */
+            background-color: #28a745; /* Green background */
+            border-block-end: 3px solid transparent; /* Transparent bottom border */
+        }
+
+        /* Example 4: Customizing Border Block Properties */
+        .custom-border-block {
+            border-block: 6px solid #17a2b8; /* Teal border for block (top and bottom) */
+            border-block-start-color: #ffc107; /* Yellow color for top border */
+            border-block-end-color: #ffc107; /* Yellow color for bottom border */
+            border-block-start-width: 3px; /* Width for top border */
+            border-block-end-width: 3px; /* Width for bottom border */
+            background-color: #17a2b8; /* Teal background */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box border-block">
+            Border Block
+        </div>
+        <div class="box border-block-end">
+            Border Block End
+        </div>
+        <div class="box border-block-start">
+            Border Block Start
+        </div>
+        <div class="box custom-border-block">
+            Custom Border Block Properties
+        </div>
+    </div>
+</body>
+</html>
+
+
+Here's a complete HTML example demonstrating the use of the CSS properties related to block dimensions and borders, including block-size, border, border-block, border-block-color, border-block-end, border-block-end-color, border-block-end-style, border-block-end-width, border-block-start, border-block-start-color, and border-block-start-width.
+
+
+
+            Background Position X & Y
+        </div>
+    </div>
+</body>
+</html>
+
+
+Here's a comprehensive HTML example demonstrating the use of various CSS properties related to backgrounds, including background-blend-mode, background-clip, background-image, background-color, background-origin, background-position, background-position-x, and background-position-y. This code combines these properties to create visually interesting effects.

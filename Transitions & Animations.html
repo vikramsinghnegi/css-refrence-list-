@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions & Animations Example</title>
+    <style>
+        /* Basic body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #34495e;
+        }
+
+        /* Transition Example */
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #3498db;
+            transition: background-color 0.5s ease, transform 0.5s ease; /* Smooth transition */
+        }
+
+        /* Transition effect on hover */
+        .transition-box:hover {
+            background-color: #e74c3c; /* Change color on hover */
+            transform: scale(1.2); /* Scale up the box */
+        }
+
+        /* Animation Example */
+        .animation-box {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #2ecc71;
+            animation: bounce 2s infinite; /* Bounce animation */
+        }
+
+        /* Keyframes for bounce animation */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0); /* Start position */
+            }
+            50% {
+                transform: translateY(-50px); /* Move up */
+            }
+            100% {
+                transform: translateY(0); /* Back to start */
+            }
+        }
+
+        /* Another Animation with multiple stages */
+        .multi-stage-animation {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #f1c40f;
+            animation: color-change 4s infinite alternate;
+        }
+
+        /* Keyframes for multiple stages */
+        @keyframes color-change {
+            0% {
+                background-color: #f1c40f; /* Yellow */
+                transform: rotate(0deg); /* No rotation */
+            }
+            50% {
+                background-color: #e67e22; /* Orange */
+                transform: rotate(180deg); /* Half rotation */
+            }
+            100% {
+                background-color: #8e44ad; /* Purple */
+                transform: rotate(360deg); /* Full rotation */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transitions & Animations Example</h1>
+
+    <!-- Div with transition effect -->
+    <div class="transition-box">
+        Hover me
+    </div>
+
+    <!-- Div with bounce animation -->
+    <div class="animation-box">
+        Bouncing Box
+    </div>
+
+    <!-- Div with multi-stage animation -->
+    <div class="multi-stage-animation">
+        Color Change & Rotate
+    </div>
+
+</body>
+</html>

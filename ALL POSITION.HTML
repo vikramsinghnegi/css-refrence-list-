@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and Layout Properties</title>
+    <style>
+        /* Basic container style */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ecf0f1;
+        }
+
+        /* Static Position (Default) */
+        .static-box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            position: static; /* Default */
+        }
+
+        /* Relative Position */
+        .relative-box {
+            width: 150px;
+            height: 150px;
+            background-color: #e74c3c;
+            position: relative;
+            top: 20px; /* Moves down 20px from original position */
+            left: 20px; /* Moves right 20px from original position */
+        }
+
+        /* Absolute Position */
+        .absolute-box {
+            width: 150px;
+            height: 150px;
+            background-color: #f1c40f;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            width: 150px;
+            height: 150px;
+            background-color: #2ecc71;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        /* Z-index demonstration */
+        .z-index-box {
+            width: 150px;
+            height: 150px;
+            background-color: #9b59b6;
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            z-index: 10; /* This box will appear above others */
+        }
+    </style>
+</head>
+<body>
+    <div class="static-box">Static</div>
+    <div class="relative-box">Relative</div>
+    <div class="absolute-box">Absolute</div>
+    <div class="fixed-box">Fixed</div>
+    <div class="z-index-box">Z-index</div>
+</body>
+</html>

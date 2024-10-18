@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Example</title>
+    <style>
+        /* Type selector - specificity (0, 0, 0, 1) */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Class selector - specificity (0, 0, 1, 0) */
+        .highlight {
+            color: red;
+        }
+
+        /* ID selector - specificity (0, 1, 0, 0) */
+        #main {
+            color: green;
+        }
+
+        /* Inline style - specificity (1, 0, 0, 0) */
+        .inline-style {
+            color: orange; /* This will override all other styles */
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight" id="main" style="color: orange;" class="inline-style">
+        This text should be orange because of the inline style.
+    </p>
+    <p class="highlight" id="main">
+        This text should be green because of the ID selector.
+    </p>
+    <p>
+        This text should be blue because of the type selector.
+    </p>
+</body>
+</html>
+
+
+Specificity can be calculated using four values, represented as a, b, c, d:
+
+a: Inline styles count (1 for inline styles, 0 otherwise)
+b: ID selectors count
+c: Class selectors, attribute selectors, and pseudo-class selectors count
+d: Type selectors and pseudo-element selectors count

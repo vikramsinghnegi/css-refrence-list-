@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in Font Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+        }
+
+        .image-text {
+            font-size: 100px; /* Adjust the size as needed */
+            font-weight: bold;
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); /* URL of the image */
+            background-size: cover; /* Cover the entire text area */
+            background-clip: text; /* Clips the background to the text */
+            -webkit-background-clip: text; /* For WebKit-based browsers */
+            color: transparent; /* Make the text color transparent */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-text">Your Text Here</div>
+</body>
+</html>

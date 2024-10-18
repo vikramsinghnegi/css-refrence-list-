@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders & Shadows Example</title>
+    <style>
+        /* Resetting all properties */
+        * {
+            all: unset;
+            box-sizing: border-box;
+        }
+
+        /* Body and container styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+        }
+
+        /* Box styles with borders, shadows and reflection */
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #007bff;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid #0056b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            transition: all 0.3s ease;
+        }
+
+        /* Box hover effect */
+        .box:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Reflection effect for a mirrored box */
+        .reflected-box {
+            width: 150px;
+            height: 150px;
+            background-color: #28a745;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .reflected-box::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            height: 20px;
+            background: rgba(40, 167, 69, 0.5);
+            transform: scaleY(-1);
+            filter: blur(3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Borders & Shadows Example</h1>
+        <div class="box">Normal Box</div>
+        <div class="reflected-box">Reflected Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Image Example</title>
+    <style>
+        video {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ccc; /* Border around video */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            object-fit: cover; /* Cover the entire container */
+        }
+
+        img {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ddd; /* Border around image */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            object-fit: cover; /* Cover the entire container */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Video and Image Example</h1>
+
+    <video 
+        src="path/to/video.mp4" 
+        controls 
+        autoplay 
+        loop 
+        muted 
+        poster="path/to/poster.jpg">
+        Your browser does not support the video tag.
+    </video>
+
+    <img 
+        src="path/to/image.jpg" 
+        alt="Description of the image" 
+        title="This is an image" 
+        loading="lazy">
+
+</body>
+</html>

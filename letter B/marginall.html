@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Properties Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white; /* White background for the container */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .box {
+            padding: 20px;
+            font-size: 1.5em;
+            border-radius: 10px; /* Rounded corners for each box */
+            background-color: #007bff; /* Blue background for each box */
+            color: white; /* White text color */
+            margin: 10px; /* Default margin for all sides */
+        }
+
+        /* Example of individual margins */
+        .margin-top {
+            margin-top: 30px; /* Top margin */
+            background-color: #28a745; /* Green background */
+        }
+
+        .margin-right {
+            margin-right: 30px; /* Right margin */
+            background-color: #dc3545; /* Red background */
+        }
+
+        .margin-bottom {
+            margin-bottom: 30px; /* Bottom margin */
+            background-color: #ffc107; /* Yellow background */
+        }
+
+        .margin-left {
+            margin-left: 30px; /* Left margin */
+            background-color: #17a2b8; /* Teal background */
+        }
+
+        /* Example of shorthand margin */
+        .margin-shorthand {
+            margin: 20px 15px 10px 5px; /* Top, Right, Bottom, Left margins */
+            background-color: #6f42c1; /* Purple background */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box margin-top">
+            Margin Top Example
+        </div>
+        <div class="box margin-right">
+            Margin Right Example
+        </div>
+        <div class="box margin-bottom">
+            Margin Bottom Example
+        </div>
+        <div class="box margin-left">
+            Margin Left Example
+        </div>
+        <div class="box margin-shorthand">
+            Margin Shorthand Example
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units Example</title>
+    <style>
+        body {
+            font-size: 16px; /* Base font size */
+        }
+
+        .box-em {
+            width: 20em;  /* 20 times the base font size (20 * 16px = 320px) */
+            height: 10em; /* 10 times the base font size */
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .box-rem {
+            width: 20rem;  /* 20 times the root font size (20 * 16px = 320px) */
+            height: 10rem; /* 10 times the root font size */
+            background-color: lightcoral;
+            margin: 10px;
+        }
+
+        .box-percent {
+            width: 50%;  /* 50% of the parent element's width */
+            height: 50%;  /* 50% of the parent element's height */
+            background-color: lightgreen;
+            margin: 10px;
+        }
+
+        .box-vw {
+            width: 50vw;  /* 50% of the viewport width */
+            height: 50vh; /* 50% of the viewport height */
+            background-color: lightyellow;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative Units Example</h1>
+    <div class="box-em">Box with em</div>
+    <div class="box-rem">Box with rem</div>
+    <div class="box-percent">Box with %</div>
+    <div class="box-vw">Box with vw & vh</div>
+</body>
+</html>
+
+2. Relative Units
+Relative units change based on other factors like the parent element's size or the viewport size. Common relative units include:
+
+em: Relative to the font-size of the element (2em means 2 times the size of the current font).
+rem (root em): Relative to the font-size of the root element (<html>).
+% (percent): Relative to the parent element.
+vw (viewport width): 1% of the viewport's width.
+vh (viewport height): 1% of the viewport's height.
+vmin: The smaller value of vw or vh.
+vmax: The larger value of vw or vh.

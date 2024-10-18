@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counter Example</title>
+    <style>
+        /* Counter ki shuruat karna */
+        body {
+            counter-reset: list-counter; /* Counter ka naam diya jata hai */
+        }
+
+        /* List items ke liye styling */
+        li {
+            list-style: none; /* Default bullet points ko hata diya */
+            counter-increment: list-counter; /* Counter ko increment karna */
+        }
+
+        /* Counter value ko dikhane ke liye */
+        li::before {
+            content: counter(list-counter) ". "; /* Counter value dikhana */
+            font-weight: bold; /* Counter ko bold banana */
+        }
+
+        /* Headings ke liye styling */
+        h1 {
+            counter-reset: heading-counter; /* Headings ke liye alag counter shuru karna */
+        }
+
+        /* Headings ke liye counter increment karna */
+        h1::before {
+            counter-increment: heading-counter; /* Heading counter ko increment karna */
+            content: counter(heading-counter) ". "; /* Heading number dikhana */
+            font-size: 24px; /* Heading size set karna */
+            color: darkblue; /* Heading ka rang */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Counter Example</h1>
+    
+    <ul>
+        <li>Pehela item</li>
+        <li>Doosra item</li>
+        <li>Tisra item</li>
+        <li>Choutha item</li>
+    </ul>
+
+    <h1>Dusra Heading</h1>
+    <ul>
+        <li>Pehela item dusra heading</li>
+        <li>Doosra item dusra heading</li>
+    </ul>
+
+</body>
+</html>

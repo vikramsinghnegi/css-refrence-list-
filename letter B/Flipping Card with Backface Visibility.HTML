@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface Visibility Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px; /* Creates a 3D space */
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d; /* Allows the child elements to be positioned in 3D space */
+            transition: transform 0.6s; /* Animation for flipping */
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg); /* Flip the card on hover */
+        }
+
+        .card-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back face when not visible */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .front {
+            background-color: #007bff; /* Blue background for front */
+        }
+
+        .back {
+            background-color: #28a745; /* Green background for back */
+            transform: rotateY(180deg); /* Rotate the back side */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-side front">
+                Front
+            </div>
+            <div class="card-side back">
+                Back
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+The `backface-visibility` CSS property determines whether the back face of an element is visible when it is rotated in 3D space. This is particularly useful for 3D transformations, such as flipping cards or other elements.
+
+### Example: Flipping Card with Backface Visibility
+
+Here’s a complete HTML file that demonstrates how to use `backface-visibility` to create a flipping card effect. This example includes both the structure and styles in the same file.
+
+#### Complete HTML Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface Visibility Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px; /* Creates a 3D space */
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d; /* Allows the child elements to be positioned in 3D space */
+            transition: transform 0.6s; /* Animation for flipping */
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg); /* Flip the card on hover */
+        }
+
+        .card-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back face when not visible */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .front {
+            background-color: #007bff; /* Blue background for front */
+        }
+
+        .back {
+            background-color: #28a745; /* Green background for back */
+            transform: rotateY(180deg); /* Rotate the back side */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-side front">
+                Front
+            </div>
+            <div class="card-side back">
+                Back
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+### Explanation
+- **HTML Structure**: The HTML consists of a card container with two sides: the front and back.
+- **CSS Styling**:
+  - **`perspective`** on the `.card` class creates a 3D space for the card to flip.
+  - **`transform-style: preserve-3d`** on the `.card-inner` class allows the front and back sides to be positioned in 3D space.
+  - **`backface-visibility: hidden`** hides the back side when it’s not visible.
+  - **On hover**, the `.card-inner` rotates 180 degrees, creating the flipping effect.
+
+### Instructions
+1. Copy the above code.
+2. Open a text editor (like Notepad, VSCode, or any code editor).
+3. Paste the code into a new file.
+4. Save the file as `index.html`.
+5. Open the saved file in your web browser.
+
+You should see a card that flips when hovered over, revealing the back side. Let me know if you need any further assistance or modifications!

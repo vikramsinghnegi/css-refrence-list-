@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Image floated to the left */
+        .float-left {
+            float: left; /* Floats image to the left */
+            width: 200px;
+            margin: 0 15px 15px 0;
+        }
+
+        /* Image floated to the right */
+        .float-right {
+            float: right; /* Floats image to the right */
+            width: 200px;
+            margin: 0 0 15px 15px;
+        }
+
+        /* Image with no float */
+        .no-float {
+            width: 200px;
+            margin: 15px 0;
+        }
+
+        .text-content {
+            clear: both; /* Ensures text starts after floats */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Float Property Example</h1>
+
+        <!-- Image floating to the left -->
+        <img src="https://via.placeholder.com/200" alt="Image Left" class="float-left">
+        <p>
+            This image is floated to the **left** using the `float: left;` property. You can see how the text wraps around the image. 
+            The image takes up space on the left, while the text flows smoothly on the right.
+        </p>
+
+        <!-- Image floating to the right -->
+        <img src="https://via.placeholder.com/200" alt="Image Right" class="float-right">
+        <p>
+            This image is floated to the **right** using the `float: right;` property. Here, the image takes up space on the right, 
+            and the text is wrapped on the left.
+        </p>
+
+        <!-- No float applied -->
+        <img src="https://via.placeholder.com/200" alt="No Float" class="no-float">
+        <p class="text-content">
+            This image is not floated; it simply appears in the normal document flow. The text starts below the image, as no floating is applied.
+        </p>
+
+    </div>
+
+</body>
+</html>

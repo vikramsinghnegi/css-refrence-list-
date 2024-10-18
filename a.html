@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Properties Example</h1>
+        <div class="flex-container">
+            <div class="box" style="align-self: flex-start;">Box 1</div>
+            <div class="box" style="align-self: center;">Box 2</div>
+            <div class="box" style="align-self: flex-end;">Box 3</div>
+        </div>
+        <button class="animated-button">Hover Me!</button>
+    </div>
+</body>
+</html>
+ csss 
+
+/* Resetting all properties */
+* {
+    all: unset;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+/* Box styles */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
+}
+
+/* Button styles */
+.animated-button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+/* Button animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Hover effect */
+.animated-button:hover {
+    background-color: #218838;
+    animation: none; /* Stop animation on hover */
+}

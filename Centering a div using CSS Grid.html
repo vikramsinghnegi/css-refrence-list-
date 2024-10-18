@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Div with CSS Grid</title>
+    <style>
+        /* Make the body take 100% of the viewport height */
+        body {
+            margin: 0;
+            height: 100vh; /* 100% of the viewport height */
+            display: grid; /* Use grid layout */
+            place-items: center; /* Centers the div horizontally and vertically */
+        }
+
+        /* Styling for the centered div */
+        .centered-div {
+            background-color: lightgreen;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-div">
+        <h2>Centered Div</h2>
+        <p>This div is centered using CSS Grid!</p>
+    </div>
+
+</body>
+</html>
+
+
+
+Explanation:
+CSS Grid:
+display: grid; sets the body as a grid container.
+place-items: center; is a shorthand for centering both horizontally and vertically. It automatically applies align-items: center and justify-items: center.
+Why this method is easy:
+CSS Grid: It allows for centering with just one line: place-items: center;.
+No need to set extra properties like in Flexbox (justify-content and align-items), making it a quick and efficient method for centering.
+
+
+
+
+
+
+
+

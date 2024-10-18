@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :root Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is a sample paragraph demonstrating CSS :root usage.</p>
+    </header>
+    <section>
+        <h2>About</h2>
+        <p>Here is some information about the website.</p>
+    </section>
+</body>
+</html>
+
+
+css 
+
+:root {
+    --primary-color: #3498db; /* Main theme color */
+    --secondary-color: #2ecc71; /* Secondary color */
+    --font-family: 'Arial', sans-serif; /* Font family */
+    --font-color: #333; /* Default font color */
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color); /* Header background color */
+    color: white; /* Text color in the header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Font size for main heading */
+}
+
+h2 {
+    color: var(--secondary-color); /* Color for subheadings */
+}
+
+p {
+    line-height: 1.6; /* Line height for paragraphs */
+}

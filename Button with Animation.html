@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation Example</title>
+    <style>
+        /* Body ki styling */
+        body {
+            font-family: Arial, sans-serif; /* Font family set karna */
+            text-align: center; /* Text ko center mein align karna */
+            margin-top: 50px; /* Top margin set karna */
+        }
+
+        /* Button ki styling */
+        .button {
+            padding: 15px 30px; /* Button ke andar padding */
+            font-size: 18px; /* Font size set karna */
+            color: white; /* Text ka color white */
+            background-color: #007bff; /* Button ka background color */
+            border: none; /* Border ko hata dena */
+            border-radius: 5px; /* Button ke corners ko round karna */
+            cursor: pointer; /* Mouse pointer ko pointer banane ke liye */
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Transition effects */
+        }
+
+        /* Button hover par animation */
+        .button:hover {
+            background-color: #0056b3; /* Hover hone par background color change */
+            transform: scale(1.1); /* Hover par button ka size badha dena */
+        }
+
+        /* Animation keyframes define karna */
+        @keyframes pulse {
+            0% {
+                transform: scale(1); /* Initial state */
+            }
+            50% {
+                transform: scale(1.1); /* 50% par size badhakar */
+            }
+            100% {
+                transform: scale(1); /* Final state par wapas normal */
+            }
+        }
+
+        /* Button par animation apply karna */
+        .button-animated {
+            animation: pulse 1s infinite; /* Animation apply karna */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button button-animated">Hover over me!</button> <!-- Button ko classes assign karna -->
+
+</body>
+</html>
+
+
+CSS animations can be applied to any HTML element, including buttons, to create engaging and interactive designs. Below is an example of how to create an animation effect on a button using CSS. I will include comments in Hindi to explain each part.
+
+### Example: Button with Animation
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation Example</title>
+    <style>
+        /* Body ki styling */
+        body {
+            font-family: Arial, sans-serif; /* Font family set karna */
+            text-align: center; /* Text ko center mein align karna */
+            margin-top: 50px; /* Top margin set karna */
+        }
+
+        /* Button ki styling */
+        .button {
+            padding: 15px 30px; /* Button ke andar padding */
+            font-size: 18px; /* Font size set karna */
+            color: white; /* Text ka color white */
+            background-color: #007bff; /* Button ka background color */
+            border: none; /* Border ko hata dena */
+            border-radius: 5px; /* Button ke corners ko round karna */
+            cursor: pointer; /* Mouse pointer ko pointer banane ke liye */
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Transition effects */
+        }
+
+        /* Button hover par animation */
+        .button:hover {
+            background-color: #0056b3; /* Hover hone par background color change */
+            transform: scale(1.1); /* Hover par button ka size badha dena */
+        }
+
+        /* Animation keyframes define karna */
+        @keyframes pulse {
+            0% {
+                transform: scale(1); /* Initial state */
+            }
+            50% {
+                transform: scale(1.1); /* 50% par size badhakar */
+            }
+            100% {
+                transform: scale(1); /* Final state par wapas normal */
+            }
+        }
+
+        /* Button par animation apply karna */
+        .button-animated {
+            animation: pulse 1s infinite; /* Animation apply karna */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button button-animated">Hover over me!</button> <!-- Button ko classes assign karna -->
+
+</body>
+</html>
+```
+
+### Explanation in Hindi:
+
+1. **HTML Structure**:
+   - `<button class="button button-animated">`: Yeh button hai jisme do classes hain — `button` jo basic styling ke liye hai, aur `button-animated` jo animation effect ke liye hai.
+
+2. **CSS Styling**:
+   - **Body ki styling**: 
+     - `font-family`: Font ko set karte hain.
+     - `text-align`: Text ko center mein align karte hain.
+     - `margin-top`: Button ke liye top margin set karte hain.
+   
+   - **Button ki styling**: 
+     - `padding`: Button ke andar space dete hain.
+     - `font-size`: Button ke text ka size set karte hain.
+     - `color`: Text ka color set karte hain.
+     - `background-color`: Button ka background color set karte hain.
+     - `border`: Button ki border ko hata dete hain.
+     - `border-radius`: Button ke corners ko round karte hain.
+     - `cursor`: Mouse pointer ko pointer banate hain jab hover karein.
+     - `transition`: Animation effects define karte hain jab hover karein.
+
+3. **Button Hover Animation**:
+   - **`.button:hover`**: Jab button par mouse hover hota hai:
+     - `background-color`: Background color change hota hai.
+     - `transform: scale(1.1)`: Button ka size 10% badh jata hai.
+
+4. **Animation Keyframes**:
+   - **`@keyframes pulse`**: Yeh animation define karte hain:
+     - `0%`: Initial state (size normal).
+     - `50%`: Midway state (size 10% badh gaya).
+     - `100%`: Final state (size wapas normal).
+
+5. **Animation Apply Karna**:
+   - **`.button-animated`**: Yeh class animation apply karte hai:
+     - `animation: pulse 1s infinite`: Animation ko apply karte hain jo 1 second duration ka hai aur infinite loop chalega.
+
+### Output:
+Jab aap button par hover karte hain, button ka color change hota hai aur size bhi thoda badhta hai. Saath hi, button ek continuous pulse effect bhi deta hai. Aap is example ko customize karke aur bhi properties add kar sakte hain jaise `box-shadow`, `opacity`, ya aur animations.

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous Properties Example</title>
+    <style>
+        /* Basic body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #34495e;
+        }
+
+        /* Opacity property */
+        .opacity-box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            margin: 20px auto;
+            opacity: 0.5; /* Semi-transparent box */
+        }
+
+        /* Cursor property */
+        .cursor-box {
+            width: 150px;
+            height: 150px;
+            background-color: #e74c3c;
+            margin: 20px auto;
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        /* Visibility property */
+        .visibility-box {
+            width: 150px;
+            height: 150px;
+            background-color: #2ecc71;
+            margin: 20px auto;
+            visibility: hidden; /* Hidden box */
+        }
+
+        /* z-index property */
+        .zindex-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #f39c12;
+        }
+
+        .zindex-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #8e44ad;
+            z-index: 10; /* Positioned above the container */
+        }
+
+        /* Overflow property */
+        .overflow-box {
+            width: 200px;
+            height: 100px;
+            background-color: #f1c40f;
+            margin: 20px auto;
+            overflow: scroll; /* Scrollbars appear when content overflows */
+        }
+
+        .overflow-content {
+            width: 300px;
+            height: 200px;
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Miscellaneous Properties Example</h1>
+
+    <!-- Div with opacity -->
+    <div class="opacity-box">
+        Opacity 0.5
+    </div>
+
+    <!-- Div with cursor property -->
+    <div class="cursor-box">
+        Hover me (Cursor changes)
+    </div>
+
+    <!-- Hidden div using visibility -->
+    <div class="visibility-box">
+        You can't see me (Visibility: hidden)
+    </div>
+
+    <!-- z-index example -->
+    <div class="zindex-container">
+        Container
+        <div class="zindex-box">
+            z-index Box
+        </div>
+    </div>
+
+    <!-- Overflow example -->
+    <div class="overflow-box">
+        <div class="overflow-content">
+            Overflow Content
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        /* Container style */
+        .box {
+            width: 300px; /* Box ki width */
+            height: 200px; /* Box ki height */
+            padding: 20px; /* Content aur border ke beech ka space */
+            border: 5px solid #3498db; /* Border ki thickness aur color */
+            margin: 30px; /* Box ke baahar ka space */
+            box-sizing: border-box; /* Padding aur border ko include karta hai width aur height mein */
+            background-color: #f1c40f; /* Background color */
+        }
+
+        /* Additional styles for visualization */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ecf0f1;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Box Model Example</h2>
+        <p>This box includes width, height, padding, border, and margin properties.</p>
+    </div>
+</body>
+</html>

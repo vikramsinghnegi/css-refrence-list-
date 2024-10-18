@@ -1,0 +1,46 @@
+//CSS Units
+1. Absolute Units
+These units are fixed and do not change based on the user's settings. Common absolute units include:
+
+px (pixels): A fixed unit that is most commonly used.
+pt (points): Traditionally used in print media, where 1 point equals 1/72 of an inch.
+cm (centimeters): Used for print layouts.
+mm (millimeters): Also used for print layouts.
+in (inches): 1 inch equals 2.54 centimeters.//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Units Example</title>
+    <style>
+        .box-px {
+            width: 200px;  /* 200 pixels */
+            height: 100px; /* 100 pixels */
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .box-pt {
+            width: 200pt;  /* 200 points */
+            height: 100pt; /* 100 points */
+            background-color: lightcoral;
+            margin: 10px;
+        }
+
+        .box-cm {
+            width: 10cm;   /* 10 centimeters */
+            height: 5cm;   /* 5 centimeters */
+            background-color: lightgreen;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Absolute Units Example</h1>
+    <div class="box-px">Box with px</div>
+    <div class="box-pt">Box with pt</div>
+    <div class="box-cm">Box with cm</div>
+</body>
+</html>

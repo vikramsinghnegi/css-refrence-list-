@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators and Pseudo-Classes/Elements</title>
+    <style>
+        /* Combinators */
+        div p {
+            color: blue;
+        }
+        div > p {
+            color: green;
+        }
+        h1 + p {
+            color: red;
+        }
+        h2 ~ p {
+            color: orange;
+        }
+
+        /* Pseudo-Classes */
+        a:hover {
+            color: red;
+        }
+        input:focus {
+            border-color: blue;
+        }
+        li:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        p:first-child {
+            font-weight: bold;
+        }
+
+        /* Pseudo-Elements */
+        h1::before {
+            content: "Title: ";
+            color: blue;
+        }
+        h1::after {
+            content: " - Welcome";
+            color: green;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>My First Heading</h1>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <h2>Subheading</h2>
+        <p>This is a paragraph after the subheading.</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <a href="#">This is a link</a>
+        <br><br>
+        <input type="text" placeholder="Focus on me!">
+    </div>
+
+</body>
+</html>

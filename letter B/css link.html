@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link States Example</title>
+    <style>
+        /* Default link style */
+        a:link {
+            color: blue; /* Unvisited link */
+            text-decoration: none;
+        }
+
+        /* Visited link style */
+        a:visited {
+            color: purple; /* Visited link */
+        }
+
+        /* Hover state */
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+            color: orange; /* Change color on hover */
+        }
+
+        /* Active state */
+        a:active {
+            color: red; /* Color when link is being clicked */
+        }
+    </style>
+</head>
+<body>
+    <h1>Link States Example</h1>
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    </p>
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit Google.com</a>
+    </p>
+</body>
+</html>
